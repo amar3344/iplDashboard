@@ -1,1 +1,37 @@
-/* Write your CSS here */
+.each-team-card {
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.103);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.each-team-card-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.each-team-card-button img {
+  max-width: 75px;
+  min-width: 50px;
+  padding: 10px;
+}
+
+.each-team-card-button h4 {
+  font-size: 15px;
+  font-family: 'Bree Serif';
+  font-weight: 500;
+  max-width: 100%;
+  min-width: 50%;
+  color: #fff;
+}

@@ -16,8 +16,9 @@ class Home extends Component {
     const url = 'https://apis.ccbp.in/ipl'
     const res = await fetch(url)
     const data = await res.json()
+    const teamsData = data.teams
 
-    this.setState({teamsList: data, isLoading: false})
+    this.setState({teamsList: teamsData, isLoading: false})
   }
 
   render() {
@@ -33,13 +34,19 @@ class Home extends Component {
           />
           <h3 className="ipl-heading">IPL Dashboard</h3>
         </div>
-        {isLoading ? (
-          <div>
-            <Loader type="TailSpin" color="#fff" height={50} width={50} />
-          </div>
-        ) : (
-          teamsList.map(item => <TeamCard key={item.id} details={item} />)
-        )}
+        <div className="teams-container">
+          {isLoading ? (
+            <div>
+              <Loader type="TailSpin" color="#fff" height={50} width={50} />
+            </div>
+          ) : (
+            <ul className="list-container">
+              {teamsList.map(item => (
+                <TeamCard key={item.id} details={item} />
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     )
   }

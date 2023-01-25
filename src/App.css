@@ -13,15 +13,15 @@ body {
 
 .react-app {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .dash-board-app {
-  width: 350px;
-  height: 100vh;
+  width: 500px;
   background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
   padding: 10px;
