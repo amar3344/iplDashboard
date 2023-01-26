@@ -1,1 +1,51 @@
-/* Write your CSS here */
+* {
+  font-family: 'Bree Serif';
+  color: #fff;
+  font-weight: 500;
+}
+
+.competing-team {
+  font-size: 18px;
+}
+
+.top-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 10px 20px;
+}
+
+.top-card img {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+}
+
+.bottom-card {
+  margin: 0px;
+  padding: 0px;
+  padding: 20px 10px 10px 20px;
+}
+
+.bottom-card p {
+  font-size: 12px;
+  margin: 0px auto;
+  padding: 5px 0px;
+}
+
+.horizontal-line {
+  border: 1px solid #1e293b;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.date {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.venue {
+  font-size: 12px;
+  margin: 5px 0px;
+}
