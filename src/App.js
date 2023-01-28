@@ -11,7 +11,7 @@ const App = () => (
     <div className="dash-board-app">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/teams-matches/:id" component={TeamMatches} />
+        <Route exact path="/team-matches/:id" component={TeamMatches} />
         <Route component={NotFound} />
       </Switch>
     </div>

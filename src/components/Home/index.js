@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {withRouter} from 'react-router-dom'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
@@ -52,4 +53,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default withRouter(Home)

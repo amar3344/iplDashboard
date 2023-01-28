@@ -20,10 +20,14 @@
   padding: 5px 0px;
 }
 
-.each-match-card h3 {
-  font-size: 13px;
-}
-
 .each-match-card p {
   font-size: 8px;
+}
+
+.win-class {
+  color: #18ed66;
+}
+
+.lose-class {
+  color: #e31a1a;
 }

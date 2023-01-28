@@ -64,21 +64,25 @@ class TeamMatches extends Component {
 
   getTeamMatchDetails = () => {
     const {teamDetails} = this.state
+    const latestMatchDetails = teamDetails.latest_match_details
+    const recentMatchDetails = teamDetails.recent_matches
     const teamClassName = this.getClassNames()
     return (
       <div className={`match-details-cont  ${teamClassName}`}>
         <img
           src={teamDetails.team_banner_url}
-          alt={teamDetails.id}
+          alt="team banner"
           className="banner-image"
         />
         <h4 className="heading">Latest Matches</h4>
         <div className="latest-match-card">
-          <LatestMatch details={teamDetails} />
+          <LatestMatch details={latestMatchDetails} />
         </div>
-        <div className="match-card-container">
-          <MatchCard details={teamDetails} />
-        </div>
+        <ul className="match-card-container">
+          {recentMatchDetails.map(item => (
+            <MatchCard key={item.id} details={item} />
+          ))}
+        </ul>
       </div>
     )
   }
