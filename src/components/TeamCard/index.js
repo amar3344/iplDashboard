@@ -11,7 +11,11 @@ const TeamCard = props => {
         to={`/team-matches/${details.id}`}
         className="each-team-card-button"
       >
-        <img src={details.team_image_url} alt={details.name} />
+        <img
+          src={details.team_image_url}
+          alt={details.name}
+          className="team-card-image"
+        />
         <p>{details.name}</p>
       </Link>
     </li>

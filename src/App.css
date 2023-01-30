@@ -23,5 +23,10 @@ body {
 .dash-board-app {
   width: 350px;
   background-size: cover;
-  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .dash-board-app {
+    width: 600px;
+  }
 }

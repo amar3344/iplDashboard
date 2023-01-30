@@ -90,7 +90,7 @@ class TeamMatches extends Component {
     return (
       <div className="team-details-con">
         {isLoading ? (
-          <div testid="loader">
+          <div>
             <Loader type="Rings" width={50} height={50} color="#fff" />
           </div>
         ) : (

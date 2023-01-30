@@ -37,7 +37,7 @@ class Home extends Component {
         </div>
         <div className="teams-container">
           {isLoading ? (
-            <div testid="loader">
+            <div>
               <Loader type="TailSpin" color="#fff" height={50} width={50} />
             </div>
           ) : (
