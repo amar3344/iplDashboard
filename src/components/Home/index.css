@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.home-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+}
+
 .ipl-logo {
   width: 30px;
   background-size: cover;

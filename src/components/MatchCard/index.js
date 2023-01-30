@@ -8,7 +8,10 @@ const MatchCard = props => {
   return (
     <li>
       <div className="each-match-card">
-        <img src={details.competing_team_logo} alt={details.competing_team} />
+        <img
+          src={details.competing_team_logo}
+          alt={`competing team ${details.competing_team}`}
+        />
         <p style={{textAlign: 'center', fontSize: '13px'}}>
           {details.competing_team}
         </p>

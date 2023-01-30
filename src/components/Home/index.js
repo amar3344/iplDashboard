@@ -26,7 +26,7 @@ class Home extends Component {
     const {teamsList, isLoading} = this.state
 
     return (
-      <div>
+      <div className="home-container">
         <div className="header-container">
           <img
             src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
@@ -37,7 +37,7 @@ class Home extends Component {
         </div>
         <div className="teams-container">
           {isLoading ? (
-            <div>
+            <div testid="loader">
               <Loader type="TailSpin" color="#fff" height={50} width={50} />
             </div>
           ) : (

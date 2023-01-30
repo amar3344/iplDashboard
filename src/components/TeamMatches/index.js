@@ -18,10 +18,7 @@ class TeamMatches extends Component {
     const {id} = params
 
     const url = `https://apis.ccbp.in/ipl/${id}`
-    const options = {
-      method: 'GET',
-    }
-    const res = await fetch(url, options)
+    const res = await fetch(url)
     const data = await res.json()
 
     this.setState({isLoading: false, teamDetails: data})
@@ -93,7 +90,7 @@ class TeamMatches extends Component {
     return (
       <div className="team-details-con">
         {isLoading ? (
-          <div>
+          <div testid="loader">
             <Loader type="Rings" width={50} height={50} color="#fff" />
           </div>
         ) : (

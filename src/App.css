@@ -22,7 +22,6 @@ body {
 
 .dash-board-app {
   width: 350px;
-  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
   padding: 10px;
 }

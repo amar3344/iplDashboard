@@ -12,7 +12,10 @@ const LatestMatch = props => {
           <p className="venue">{details.venue}</p>
           <p className="venue">{details.result}</p>
         </div>
-        <img src={details.competing_team_logo} alt={details.competing_team} />
+        <img
+          src={details.competing_team_logo}
+          alt={`latest match ${details.competing_team}`}
+        />
       </div>
       <hr className="horizontal-line" />
       <div className="bottom-card">
